@@ -28,26 +28,17 @@ const array = [
 ];
 
 //Create an array using forEach that has all the usernames with a "!" to each of the usernames
-const excited = [];
-const arrayForEach = array.forEach(user => { 
-  excited.push(user.username + "!") 
-});
+
 
 //Create an array using map that has all the usernames with a "? to each of the usernames
 
-const arrayMap = array.map(user => { 
-  return user.username + "?";
-})
 
 //Filter the array to only include users who are on team: red
-const arrayTeam = array.filter(colorTeam => {
-  return colorTeam.team === 'red'
-});
+
 
 //Find out the total score of all users using reduce
-const total = array.reduce((acc, user) => {
-  return acc + user.score}, 0
-);
+
+
 // (1), what is the value of i?
 // (2), Make this map function pure:
 const arrayNum = [1, 2, 4, 5, 8, 9];

@@ -35,6 +35,11 @@ array.forEach(user => {
 	newArray.push(username);
 })
 console.log(newArray);
+//or 
+const newArray2 = [];
+const arrayForEach = array.forEach(user => { 
+  newArray2.push(user.username + "!") 
+});
 
 //Create an array using map that has all the usernames with a "?" at the end of usernames
 const mapArray = array.map(user => {
@@ -42,7 +47,10 @@ const mapArray = array.map(user => {
 	return username + "?";
 })
 console.log(mapArray);
-
+// or 
+const arrayMap = array.map(user => { 
+	return user.username + "?";
+  })
 //Filter the array to only include users who are on team: red
 const filterArray = array.filter(user => {
 	return user.team === "red";
