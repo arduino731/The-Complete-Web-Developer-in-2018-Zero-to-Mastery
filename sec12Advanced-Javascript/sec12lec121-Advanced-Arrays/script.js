@@ -1,4 +1,4 @@
-//map , filter, reduce 
+//foreach, map , filter, reduce 
 
 const array = [1,2,10,16];
 const name = ['a', 'b','c'];
