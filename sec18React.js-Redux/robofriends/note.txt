@@ -1,0 +1,18 @@
+node module > $npm i create-react-app 
+
+https://www.npmjs.com/package/create-react-app
+https://github.com/facebook/create-react-app
+
+Service Workers: an Introduction (registerServiceWorker)
+https://developers.google.com/web/fundamentals/primers/service-workers/
+
+API's 
+https://robohash.org/
+
+this-Binding in Reach
+https://reactjs.org/docs/handling-events.html
+
+toLowerCase()
+https://www.w3schools.com/jsref/jsref_tolowercase.asp
+includes()
+https://www.w3schools.com/jsref/jsref_includes.asp
