@@ -6,7 +6,7 @@ import './index.css';
 import App3 from './App3';
 import registerServiceWorker from './registerServiceWorker';
 import 'tachyons';
-import { robots } from './robots';
+// import { robots } from './robots';
 
 // import Hello1 from './Hello1';
 // ReactDOM.render(< Hello1 /> , document.getElementById('root'));
