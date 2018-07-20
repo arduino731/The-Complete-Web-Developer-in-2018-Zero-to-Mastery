@@ -17,7 +17,9 @@ array.forEach((num,i)=>{
 
 console.log('forEach', double); // [2,4,20,32]
 
-const mapArray0 = array.map(num => num * 2);
+const mapArray0 = array.map((num) => {
+    num * 2
+});
 const mapArray1 = name.map((num) => {
     return num + "5"; // in function, here can change data.
 });
