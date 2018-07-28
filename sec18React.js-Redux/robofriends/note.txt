@@ -1,3 +1,7 @@
+
+cd sec18React.js-Redux/robofriends
+to start server by $ npm start
+
 node module > $npm i create-react-app 
 
 https://www.npmjs.com/package/create-react-app
