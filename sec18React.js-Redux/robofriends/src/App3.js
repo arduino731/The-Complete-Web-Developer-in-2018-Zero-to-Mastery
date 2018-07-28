@@ -2,6 +2,7 @@ import React, {Component } from 'react';
 import CardList2 from './CardList2';
 import SearchBox3 from './SearchBox3';
 import { robots } from './robots';
+import ErrorBoundry from './ErrorBoundry';
 
 class App3 extends Component {
   constructor() {
@@ -29,7 +30,9 @@ class App3 extends Component {
       <div className="tc">
         <h1>RoboFriends</h1>
         <SearchBox3 searchChange={ this.onSearchChange } />
-        <CardList2 robots={ filteredRobots } />
+        <ErrorBoundry>
+          <CardList2 robots={ filteredRobots } />
+        </ErrorBoundry>
       </div>
     );
 
