@@ -1,0 +1,11 @@
+http://jsonplaceholder.typicode.com/
+
+robohash.org
+
+swapi.co (all the Star Wars data)
+
+stripe.com/docs/api (payment method)
+
+https://www.twilio.com/docs/usage/api (sneding of messages on phones)
+
+By the way, this is my favourite resource for finding an API when I have an idea for a project: https://apilist.fun/
