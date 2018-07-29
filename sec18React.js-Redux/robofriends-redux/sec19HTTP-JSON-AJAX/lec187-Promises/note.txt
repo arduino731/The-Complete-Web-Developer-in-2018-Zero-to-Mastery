@@ -1,8 +1,0 @@
-promises are a new feature in javascript ES6. 
-it really useful to have them instead of callbacks 
-
-three possible states 'fulfilled', 'rejected', or 'pending'
-
-promises are great for asynchronous programming
-
-
