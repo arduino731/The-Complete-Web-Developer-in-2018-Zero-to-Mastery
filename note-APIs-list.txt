@@ -4,11 +4,6 @@ Go ahead and clone it and do what you will with it. It's all yours to put into y
 https://github.com/aneagoie/robofriends-redux
 
 
-
-
-
-
-
 http://jsonplaceholder.typicode.com/
 
 robohash.org
@@ -20,3 +15,5 @@ stripe.com/docs/api (payment method)
 https://www.twilio.com/docs/usage/api (sneding of messages on phones)
 
 By the way, this is my favourite resource for finding an API when I have an idea for a project: https://apilist.fun/
+
+https://www.clarifai.com/
