@@ -1,5 +1,7 @@
 npm i create-react-app 
 
-npm i react-tilt
+npm i react-tilt https://www.npmjs.com/package/react-tilt
 
 npm i tachyons
+
+npm install particles.js https://github.com/VincentGarreau/particles.js/
