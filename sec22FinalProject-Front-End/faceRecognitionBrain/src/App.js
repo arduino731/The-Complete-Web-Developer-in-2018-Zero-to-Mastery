@@ -62,29 +62,37 @@ class App extends Component {
         }
     }
     calculateFaceLocation = (data) => {
-       let facedata = data.outputs[0].data.regions;
-       let clarifaiFace;
-       for(let i = 0; i < facedata.length; i++){
-           let numface = [facedata[i]];
-           numface.push(facedata);
-           clarifaiFace = numface[0].region_info.bounding_box;
-           console.log(clarifaiFace);
-       }
-       
-    //    const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+       const facedata = data.outputs[0].data.regions;
        const image = document.getElementById('inputimage');
        const width = Number(image.width);
        const height = Number(image.height);
-       return {
-           leftCol: clarifaiFace.left_col * width,
-           topRow: clarifaiFace.top_row * height,
-           rightCol: width - (clarifaiFace.right_col * width),
-           bottomRow: height - (clarifaiFace.bottom_row * height)
-       }
+
+        let faceBox = facedata.map((x) => {
+           let clarifaiFace = x.region_info.bounding_box;
+           console.log(clarifaiFace);
+           return {
+                leftCol: clarifaiFace.left_col * width,
+                topRow: clarifaiFace.top_row * height,
+                rightCol: width - (clarifaiFace.right_col * width),
+                bottomRow: height - (clarifaiFace.bottom_row * height)
+            }
+            
+        })
+        console.log('faceBox', faceBox)
+
+       
+        const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
+        console.log('cla', clarifaiFace);
+        return {
+            leftCol: clarifaiFace.left_col * width,
+            topRow: clarifaiFace.top_row * height,
+            rightCol: width - (clarifaiFace.right_col * width),
+            bottomRow: height - (clarifaiFace.bottom_row * height)
+        }
     }
 
     displayFaceBox = (box) => {
-        console.log(box);
+        console.log('box', box);
         this.setState({ box: box })
     }
 
